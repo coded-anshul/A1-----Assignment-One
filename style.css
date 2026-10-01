@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.card {
+  position: relative;
+  width: 900px;
+  height: 550px;
+  background: linear-gradient(to right, #ffcb05 60%, #fdf3d0 60%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  position: absolute;
+  top: 35px;
+  left: 45px;
+  width: 150px;
+}
+
+.menu {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  width: 30px;
+}
+
+
+.text-content {
+  position: absolute;
+  top: 250px;
+  left: 45px;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.text-content h4 {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.text-content h1 {
+  font-size: 80px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.text-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.slide-number {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.pikachu {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 450px;
+  z-index: 10;
+}
+
+.pagination {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #d8c381;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #111;
+}
